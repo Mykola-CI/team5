@@ -673,8 +673,8 @@ section,
   position: relative;
   background: linear-gradient(
     0deg,
-    rgba(42, 44, 57, 0.90) 0%, /* Adjusted to use rgba for transparency */
-    color-mix(in srgb, rgba(42, 44, 57, 0.90) 90%, white 10%) 100%
+    rgba(42, 44, 57, 0.80) 0%, /* Adjusted to use rgba for transparency */
+    color-mix(in srgb, rgba(42, 44, 57, 0.80) 90%, white 10%) 100%
   );
   padding: 0;
   display: flex;

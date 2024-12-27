@@ -671,12 +671,30 @@ section,
   width: 100%;
   overflow: hidden;
   position: relative;
-  background: linear-gradient(0deg, var(--background-color) 0%, color-mix(in srgb, var(--background-color) 90%, white 10%) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(42, 44, 57, 0.90) 0%, /* Adjusted to use rgba for transparency */
+    color-mix(in srgb, rgba(42, 44, 57, 0.90) 90%, white 10%) 100%
+  );
   padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: end;
   align-items: center;
+  /* opacity: 0.1; */
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/seamless_background_speakers_with_tweeters.png'); /* Replace with your image URL */
+  background-size: cover; /* Ensures the image covers the entire area */
+  background-position: center; /* Centers the image */
+  z-index: -1; /* Places the pseudo-element behind the .hero content */
 }
 
 .hero .carousel-container {
